@@ -11,7 +11,12 @@ use Laravel\Passport\HasApiTokens;
 
 class User extends Authenticatable
 {
-use HasFactory, Notifiable, HasApiTokens;
+    use HasFactory, Notifiable, HasApiTokens;
+
+   public function packages()
+   {
+        return $this->hasOne('App\Models\packages'); //Birebir ilişki Her Company'nin bir adet paket tanımlaması vardır.
+   }
 
     /**
      * The attributes that are mass assignable.

@@ -15,14 +15,18 @@ class Packages extends Migration
     {
         Schema::create('packages', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('company_id');
             $table->string('name');
-            $table->string('per');
+            $table->string('status');
             $table->string('start_date');
             $table->string('end_date');
-
-            
-            $table->timestamps();
-        });
+             $table->timestamps();
+            $table->foreign('company_id')
+            ->references('id')
+            ->on('users')
+            ->onDelete('cascade');
+            });
+           
     }
 
     /**
