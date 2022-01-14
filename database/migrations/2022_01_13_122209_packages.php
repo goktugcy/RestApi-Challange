@@ -17,7 +17,7 @@ class Packages extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('company_id');
             $table->string('name');
-            $table->string('status');
+            $table->integer('status')->default(1)->comment('0:pasif 1:aktif'); 
             $table->string('start_date');
             $table->string('end_date');
              $table->timestamps();
