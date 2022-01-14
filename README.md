@@ -18,7 +18,9 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 ##Ekran Görüntüleri
 
-    - <img src=https://i.hizliresim.com/s6ruaci.png" width="500">
-    - <img src=https://i.hizliresim.com/54v8frp.png" width="500">
-    - <img src=https://i.hizliresim.com/ktle43f.png" width="500">
-   
+![alt text](https://i.hizliresim.com/s6ruaci.png)
+<br>
+![alt text](https://i.hizliresim.com/54v8frp.png)
+<br>
+![alt text](https://i.hizliresim.com/ktle43f.png)
+  
